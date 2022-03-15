@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="648.0" prefWidth="562.0" styleClass="bodybg" stylesheets="@bgk.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlineproject.SignUpController">
+   <children>
+      <AnchorPane layoutX="31.0" layoutY="58.0" prefHeight="530.0" prefWidth="354.0" style="-fx-background-color: #60453c;">
+         <children>
+            <ImageView fitHeight="211.0" fitWidth="263.0" layoutX="46.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@avion.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="22.0" layoutY="261.0" text="Username:" textFill="#cc9542">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="312.0" text="Password:" textFill="#cc9542">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_username" layoutX="126.0" layoutY="261.0" prefHeight="26.0" prefWidth="170.0" />
+            <PasswordField fx:id="tf_password" layoutX="126.0" layoutY="312.0" prefHeight="26.0" prefWidth="170.0" />
+            <Button fx:id="button_register" layoutX="139.0" layoutY="388.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: #cc9542;" text="Register">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="71.0" layoutY="455.0" text="Already a Member?" textFill="#cc9542">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_logIn" layoutX="211.0" layoutY="450.0" mnemonicParsing="false" onAction="#onLogInUpButtonClick" style="-fx-background-color: #ffffff00; -fx-cursor: hand;" text="Log In!" textFill="#cc9542" underline="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

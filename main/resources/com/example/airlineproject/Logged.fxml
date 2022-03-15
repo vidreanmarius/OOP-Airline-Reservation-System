@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="648.0" prefWidth="562.0" styleClass="bodybg" stylesheets="@bgk.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlineproject.LoggedInController">
+   <children>
+      <AnchorPane layoutX="31.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="354.0" style="-fx-background-color: #60453c;">
+         <children>
+            <Label layoutX="58.0" layoutY="30.0" text="Book Your Next Trip!" textFill="#cc9542">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="100.0" text="From:" textFill="#cc9542">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="140.0" text="To:" textFill="#cc9542">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choice_from" layoutX="113.0" layoutY="100.0" prefHeight="26.0" prefWidth="174.0" />
+            <ChoiceBox fx:id="choice_to" layoutX="113.0" layoutY="140.0" prefHeight="26.0" prefWidth="174.0" />
+            <DatePicker fx:id="date" layoutX="113.0" layoutY="180.0" prefHeight="26.0" prefWidth="174.0" />
+            <Label layoutX="34.0" layoutY="180.0" text="Date" textFill="#cc9542">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_search" layoutX="135.0" layoutY="230.0" mnemonicParsing="false" onAction="#whenSearch" prefHeight="0.0" prefWidth="77.0" style="-fx-background-color: #cc9542;" text="Search">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="table" layoutX="8.0" layoutY="288.0" prefHeight="228.0" prefWidth="338.0" stylesheets="@table.css">
+              <columns>
+                <TableColumn fx:id="col_id" prefWidth="84.19997787475586" style="-fx-background-color: #cc9542;" text="flight_id"/>
+                <TableColumn fx:id="col_class" prefWidth="85.60000610351562" style="-fx-background-color: #cc9542;" text="class" />
+                  <TableColumn fx:id="col_hour" prefWidth="73.59999084472656" style="-fx-background-color: #cc9542;" text="hour" />
+                  <TableColumn fx:id="col_price" prefWidth="83.39996337890625" style="-fx-background-color: #cc9542;" text="price" />
+              </columns>
+               <styleClass>
+                  <String fx:value="filler" />
+                  <String fx:value="laber" />
+                  <String fx:value="table-view" />
+                  <String fx:value="column-header-background" />
+               </styleClass>
+            </TableView>
+         </children></AnchorPane>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+      <Button fx:id="button_print" layoutX="165.0" layoutY="600.0" mnemonicParsing="false" onAction="#whenPrint" style="-fx-background-color: #ffffff00;" text="Print Receipt" underline="true">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
